@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+## Installation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- package manager used: npm - v9.5.0
+  - https://www.npmjs.com/package/npm
+- to install dependencies, run:
 
-## Available Scripts
+```terminal
+npm install
+```
 
-In the project directory, you can run:
+## Technologies used
 
-### `npm start`
+- This application is based in ReactJS (v18.2.0), JavaScript and JSX.
+  - it was created using the 'create-react-app' command
+  - https://create-react-app.dev/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```terminal
+npx create-react-app react-todo-app
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Dependencies
 
-### `npm test`
+- react-icons (v4.10.1)
+  - https://react-icons.github.io/react-icons/
+  - https://www.npmjs.com/package/react-icons
+- framer-motion (v10.15.1)
+  - https://www.npmjs.com/package/framer-motion
+- react-redux (v^8.1.2)
+  - https://www.npmjs.com/package/react-redux
+- @reduxjs/toolkit (v1.9.5)
+  - https://www.npmjs.com/package/@reduxjs/toolkit
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Additional tools used:
 
-### `npm run build`
+- Git / GitHub
+  - used for version control
+  - https://git-scm.com/
+  - https://github.com/https://github.com/
+- Visual Studio Code (VSCode)
+  - code editor used for writing CSS, JSX, JavaScript and ruby.
+- Google Chrome browser
+  - used for launching the website and displaying the application Google Chrome
+- Google Chrome Developer Tools: For troubleshooting and debugging
+  - https://www.google.com/intl/en_uk/chrome/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deliverables
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### MVP
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Create a to-do list application using React.js with:
+  - Ability to add new tasks to the list
+  - Ability to mark tasks as completed
+  - Ability to remove tasks from the list
+  - Display the total number of tasks remaining
+- Store tasks in the browser's local storage, so that they persist after the page is reloaded
+- Use Create React App to set up the project
+- Use functional components and hooks (e.g. useState, useEffect)
+- Use CSS modules or styled components for styling
+- The user interface should be responsive and intuitive.
+- Use a state management library such as Redux or Context API to manage the application state
+- Use Git for version control and commit frequently with clear commit messages
+- Write clear and concise code, and comment where necessary
+- Host the application on a public Git repository and provide the link to the repository
 
-### `npm run eject`
+### Stretch Goals
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add drag and drop functionality for tasks
+- Allow tasks to be edited after they have been added
+- Add filtering functionality to show completed tasks only or all tasks
+- Add search functionality to search for tasks by name
