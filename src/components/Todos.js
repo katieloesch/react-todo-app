@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { connect } from 'react-redux'
-import { addTodo, removeTodo, updateTodo } from '../redux/reducer'
+import { addTodo, completeTodo, removeTodo, updateTodo } from '../redux/reducer'
+import TodoList from './TodoList'
 
 const mapStateToProps = (state) => {
   return {
@@ -12,32 +13,19 @@ const mapDispatchToProps = (dispatch) => {
   return {
     addTodo: (obj) => dispatch(addTodo(obj)),
     removeTodo: (id) => dispatch(removeTodo(id)),
-    updateTodo: (obj) => dispatch(updateTodo(obj))
+    updateTodo: (obj) => dispatch(updateTodo(obj)),
+    completeTodo: (id) => dispatch(completeTodo(id))
   }
 }
 
 const Todos = (props) => {
 
     const [todo, setTodo] = useState('')
-    const inputRef = useRef(true)
-
-    const focusTextarea = () => {
-      inputRef.current.disabled = false;
-      inputRef.current.focus();
-    }
-
-    const saveChanges = (id, value, e) => {
-      if (e.which === 13) { // Enter key pressed
-        props.updateTodo({id, item:value});
-        inputRef.current.disabled = true;
-      }
-    }
-
 
     const handleInputChange = (e) => {
         setTodo(e.target.value)
     }
-    console.log(props)
+    // console.log(props)
   return (
     <div className='todos'>
         <h1>todos</h1>
@@ -57,17 +45,7 @@ const Todos = (props) => {
 
 
         <div>
-            <ul>
-              {
-                props.todos.map((todo) => {
-                  return <li key={todo.id}>
-                            <textarea ref={inputRef} disabled={inputRef} defaultValue={todo.item} onKeyPress={(e) => saveChanges(todo.id, inputRef.current.value, e) }/>
-                            <button onClick={focusTextarea}>Edit</button>
-                            <button onClick={() => props.removeTodo(todo.id)}>X</button>
-                          </li>
-                })
-              }
-            </ul>
+            <TodoList />
         </div>
     </div>
   )
