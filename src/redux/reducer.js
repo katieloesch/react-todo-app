@@ -8,10 +8,12 @@ const addToReducer = createSlice({
     reducers: {
         addTodo: (state, action) => {
             state.push(action.payload)
-            return state
-                
-    }
+            return state        
+        },
+        removeTodo: (state, action) => {
+            return state.filter(todo => todo.id!== action.payload)
+        }
 }})
 
-export const { addTodo } = addToReducer.actions
+export const { addTodo, removeTodo } = addToReducer.actions
 export const reducer = addToReducer.reducer
