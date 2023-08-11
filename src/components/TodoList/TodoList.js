@@ -1,7 +1,8 @@
 import { connect } from 'react-redux'
 import React, { useState } from 'react'
-import { addTodo, completeTodo, removeTodo, updateTodo } from '../redux/reducer'
-import Todo from './Todo'
+import { addTodo, completeTodo, removeTodo, updateTodo } from '../../redux/reducer'
+import Todo from '../Todo/Todo'
+import styles from './TodoList.module.css'
 
 const mapStateToProps = (state) => {
     return {
@@ -22,11 +23,11 @@ const TodoList = (props) => {
     const [filter, setFilter] = useState('in-progress')
 
   return (
-    <div className='todo-list'>
-        <div className='filters'>
-            <button onClick={() => setFilter('all')}>All</button>
-            <button onClick={() => setFilter('completed')}>Completed</button>
-            <button onClick={() => setFilter('in-progress')}>In Progress</button>
+    <div className={styles.TodoList}>
+        <div className={styles.filters}>
+            <button className={styles.btn} onClick={() => setFilter('all')}>All</button>
+            <button className={styles.btn} onClick={() => setFilter('completed')}>Completed</button>
+            <button className={styles.btn} onClick={() => setFilter('in-progress')}>In Progress</button>
         </div>
 
         <div>

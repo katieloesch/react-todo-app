@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@400;700&display=swap');
+
+/* variables */
+:root {
+  --font-main: 'Sulphur Point', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  /* color variables */
+
+  --primary: rgb(47, 30, 120);
+  --primary-light: rgb(59, 38, 151);
+  --focus: rgb(192, 96, 36);
+  --white: white;
+
+  /*
+
+  --primary-dark: #916265;
+  --secondary-light: #313bac;
+  --secondary-dark: #4C2777;
+  */
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-main)
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  line-height: 1.25;
+  background: rgb(0,128,128);
+  background: linear-gradient(90deg, rgba(0,128,128,1) 0%, rgba(0,176,176,1) 50%, rgba(0,128,128,1) 100%);
+
 }

@@ -30,6 +30,11 @@ npx create-react-app react-todo-app
 - @reduxjs/toolkit (v1.9.5)
   - https://www.npmjs.com/package/@reduxjs/toolkit
 
+### font
+
+- 'Sulphur Point' by Dale Sattler
+  - https://fonts.google.com/specimen/Sulphur+Point
+
 ### Additional tools used:
 
 - Git / GitHub

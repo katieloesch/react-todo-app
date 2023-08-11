@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import styles from './Todo.module.css'
 
 const Todo = (props) => {
     const {todo, updateTodo, removeTodo, completeTodo} = props
@@ -18,15 +19,15 @@ const Todo = (props) => {
     }
 
   return (
-    <li key={todo.id} className='todo-card'>
-        <textarea ref={inputRef} disabled={inputRef} defaultValue={todo.item} onKeyPress={(e) => saveChanges(todo.id, inputRef.current.value, e) }/>
-        <div className='btns-todo-card'>
+    <li key={todo.id} className={styles.card}>
+        <textarea className={styles.title} ref={inputRef} disabled={inputRef} defaultValue={todo.item} onKeyPress={(e) => saveChanges(todo.id, inputRef.current.value, e) }/>
+        <div className={styles.btns}>
             <button onClick={() => completeTodo(todo.id)}>Complete</button>
             <button onClick={focusTextarea}>Edit</button>
             <button onClick={() => removeTodo(todo.id)}>X</button>
         </div>
         <div>
-            {todo.completed && <span className='todo-status'>done</span>}
+            {todo.completed && <span className={styles.status}>done</span>}
         </div>
      
     </li>

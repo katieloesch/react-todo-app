@@ -1,0 +1,14 @@
+.TodoList {
+    margin-top: 3rem;
+    display: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
