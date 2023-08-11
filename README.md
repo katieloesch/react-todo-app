@@ -1,3 +1,5 @@
+# React Todo Application
+
 ## Installation
 
 - package manager used: npm - v9.5.0
@@ -10,7 +12,7 @@ npm install
 
 ## Technologies used
 
-- This application is based in ReactJS (v18.2.0), JavaScript and JSX.
+- This application is based in ReactJS (v18.2.0), JavaScript, JSX and CSS.
   - it was created using the 'create-react-app' command
   - https://create-react-app.dev/
 

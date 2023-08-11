@@ -10,6 +10,10 @@
     font-size: 3.2rem;
     color: var(--primary);
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .form {
@@ -66,7 +70,17 @@
     transition: 0.4s;
 }
 
+@media screen and (max-width: 320px) {
+   
+    .title {
+        font-size: 2.75rem;
+    }
+}
 @media screen and (max-width: 290px) {
+
+    .title {
+        font-size: 2.5rem;
+    }
    
     .btn {
         margin-left: 0.2rem;

@@ -14,13 +14,6 @@
   --white: rgb(255, 255, 255);
   --green: rgb(32, 171, 88);
 
-  /*
-
-  --primary-dark: #916265;
-  --secondary-light: #313bac;
-  --secondary-dark: #4C2777;
-  */
-
 }
 
 * {
@@ -40,8 +33,4 @@ body {
   min-height: 100vh;
   background: rgb(80,169,207);
   background: linear-gradient(90deg, rgba(80,169,207,1) 0%, rgba(168,223,231,1) 50%, rgba(80,169,207,1) 100%);
-
-
-
-
 }
