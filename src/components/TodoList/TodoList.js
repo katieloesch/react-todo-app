@@ -21,7 +21,11 @@ const mapStateToProps = (state) => {
 
 const TodoList = (props) => {
     const [filter, setFilter] = useState('in-progress')
-
+    if (props.todos.length > 0) {
+        let saveForLater = {todoArr: props.todos}
+        localStorage.setItem('todos', JSON.stringify(saveForLater))
+    }
+   
   return (
     <div className={styles.TodoList}>
         <div className={styles.filters}>
@@ -30,11 +34,11 @@ const TodoList = (props) => {
             <button className={styles.btn} onClick={() => setFilter('in-progress')}>In Progress</button>
         </div>
 
-        <div>
+        <div className={styles.counter}>
             <h2>Tasks remaining: {props.todos.filter(todo => !todo.completed).length} </h2>
         </div>
 
-        <ul>
+        <ul className={styles.todos}>
             { /** Filter: in-progress -> only show todos that are NOT completed **/
                 (props.todos.length > 0 && filter === 'in-progress') ? 
                     props.todos.map(todo => {

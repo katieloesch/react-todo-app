@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { connect } from 'react-redux'
 import { addTodo, completeTodo, removeTodo, updateTodo } from '../../redux/reducer'
 import TodoList from '../TodoList/TodoList'
@@ -28,7 +28,6 @@ const TodoApp = (props) => {
     const handleInputChange = (e) => {
         setTodo(e.target.value)
     }
-    // console.log(props)
 
     const handleAddClicked = () => {
       props.addTodo({
@@ -38,6 +37,7 @@ const TodoApp = (props) => {
       })
       setTodo('')
     }
+
 
   return (
     <div className={styles.TodoApp}>
@@ -51,10 +51,9 @@ const TodoApp = (props) => {
           <GoPlus />
           </button>
         </div>
-
-        <div>
-            <TodoList />
-        </div>
+        
+        <TodoList />
+        
     </div>
   )
 }

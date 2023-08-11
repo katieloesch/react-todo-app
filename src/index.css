@@ -9,8 +9,10 @@
 
   --primary: rgb(47, 30, 120);
   --primary-light: rgb(59, 38, 151);
-  --focus: rgb(192, 96, 36);
-  --white: white;
+  --secondary: rgb(170, 255, 241);
+  --focus: rgb(39, 138, 225);
+  --white: rgb(255, 255, 255);
+  --green: rgb(32, 171, 88);
 
   /*
 
@@ -35,7 +37,11 @@ ul {
 
 body {
   line-height: 1.25;
-  background: rgb(0,128,128);
-  background: linear-gradient(90deg, rgba(0,128,128,1) 0%, rgba(0,176,176,1) 50%, rgba(0,128,128,1) 100%);
+  min-height: 100vh;
+  background: rgb(80,169,207);
+  background: linear-gradient(90deg, rgba(80,169,207,1) 0%, rgba(168,223,231,1) 50%, rgba(80,169,207,1) 100%);
+
+
+
 
 }

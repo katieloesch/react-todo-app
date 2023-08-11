@@ -1,7 +1,100 @@
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    border-radius: 5px;
+    width: 45%;
+    padding: 1rem;
+    border: 2px solid var(--primary);
+    position: relative;
 }
-.title {
+.textarea {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.2rem;
+    color: var(--primary);
+    resize: none;
    
 }
-.btns {}
-.status {}
+
+.textarea:focus {
+    outline: none;
+
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    padding: 0.2rem 0.5rem;
+
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+}
+
+.btn:first-of-type svg {
+   scale: 1.15;
+}
+
+.btn svg {
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:hover svg {
+    color: var(--focus);
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.btn:first-of-type:hover svg {
+   scale: 1.4
+ }
+
+.done {
+    position: absolute;
+    right: 0.3rem;
+    top: 0.3rem;
+    background-color: var(--green);
+    border: 2px solid var(--primary);
+    color: var(--white);
+    font-size: 1.15rem;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1050px) {
+   
+    .card {
+        width: 90%;
+    }
+  
+}
+@media screen and (max-width: 400px) {
+   
+    .textarea {
+        min-height: 5rem;
+       
+    }
+}
+@media screen and (max-width: 290px) {
+   
+    .textarea {
+        min-height: 6rem;
+       
+    }
+}
+
+

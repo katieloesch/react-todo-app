@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .title {
@@ -11,7 +10,6 @@
     font-size: 3.2rem;
     color: var(--primary);
     margin-bottom: 2rem;
-    text-shadow: 0 0 5px rgb(97, 181, 178), 3px -1px 5px rgb(69, 131, 128);
 }
 
 .form {
@@ -26,8 +24,8 @@
     height: 2.5rem;
     border-radius: 5px;
     padding: 0.5rem 1rem;
-    background-color: var(--white);
-    border: 2px solid transparent;
+    background-color: var(--secondary);
+    border: 2px solid var(--primary);
     font-size: 1.15rem;
     color: var(--primary)
 }
@@ -66,4 +64,15 @@
 .btn:hover svg{
     scale: 1.12;
     transition: 0.4s;
+}
+
+@media screen and (max-width: 290px) {
+   
+    .btn {
+        margin-left: 0.2rem;
+    }
+
+    .input {
+        min-width: 12rem;
+    }
 }
