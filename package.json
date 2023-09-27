@@ -1,5 +1,6 @@
 {
-  "name": "hope",
+  "name": "todo-app",
+  "homepage": "todo-app.katieloesch.co.uk/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

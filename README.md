@@ -1,5 +1,11 @@
 # React Todo Application
 
+## Description
+
+A todo list application built from scratch using React.js with full CRUD functionality: users can add new tasks to the list, mark tasks as completed, edit tasks and remove tasks from the list.
+The application also displays the total number of tasks remaining and tasks are saved in the browser's local storage, so they persist after reloading the page. There is also filtering functionality to show completed tasks only, incomplete tasks or all tasks.
+Application state is managed with Redux and styling was achieved using CSS modules with a fully responsive design.
+
 ## Installation
 
 - package manager used: npm - v9.5.0
@@ -74,4 +80,9 @@ npx create-react-app react-todo-app
 - Add drag and drop functionality for tasks
 - Allow tasks to be edited after they have been added
 - Add filtering functionality to show completed tasks only or all tasks
+- Add search functionality to search for tasks by name
+
+## Future Improvements
+
+- Add drag and drop functionality for tasks
 - Add search functionality to search for tasks by name

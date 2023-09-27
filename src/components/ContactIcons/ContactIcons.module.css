@@ -1,0 +1,87 @@
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  z-index: 0;
+  padding-bottom: 1.5rem;
+  gap: 2rem;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(39, 70, 121, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+  padding-top: 3px;
+  color:  rgba(39, 70, 121, 0.7);
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  border: 1px solid var(--primary);
+  background-color: var(--secondary);
+
+}
+
+.icon svg:hover {
+  color: var(--primary);
+}
+
+#linkedin svg {
+  margin-top: 2px;
+}
+
+#code svg, #github svg, #mail svg,  #portfolio svg {
+  margin-top: 1px;
+}
+
+
+#mail svg, #portfolio svg {
+  scale: 1.2;
+}
+
+#github svg, #code svg {
+  scale: 1.1;
+} 
+
+@media screen and (min-width: 2000px) {
+  .icon {
+    width: 70px;
+    height: 70px;
+    margin: 0.5rem 0;
+  }
+
+  .icon svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .icons {
+    padding-bottom: 12rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .icons {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .icons {
+    gap: 1rem;
+  }
+}
